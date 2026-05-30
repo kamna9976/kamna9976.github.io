@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamna | Lead Java Engineer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a5f, #0f172a);
+      padding: 60px 40px;
+      text-align: center;
+      border-bottom: 2px solid #f59e0b;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+      border: 3px solid #f59e0b;
+    }
+
+    header h1 { font-size: 2.4rem; color: #f8fafc; }
+    header h2 { font-size: 1.1rem; color: #f59e0b; margin-top: 6px; letter-spacing: 1px; }
+    header p  { color: #94a3b8; margin-top: 10px; }
+
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-bar a {
+      color: #7dd3fc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .contact-bar a:hover { color: #f59e0b; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+    section { margin-bottom: 48px; }
+
+    h3 {
+      font-size: 1.2rem;
+      color: #f59e0b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #1e3a5f;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .summary { color: #cbd5e1; font-size: 1rem; }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #1e3a5f;
+      color: #7dd3fc;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid #2563eb;
+    }
+
+    .job { margin-bottom: 28px; }
+    .job-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
+    .job-title { font-weight: 700; color: #f8fafc; font-size: 1rem; }
+    .job-company { color: #f59e0b; font-size: 0.95rem; }
+    .job-date { color: #64748b; font-size: 0.85rem; }
+
+    .job ul { margin-top: 10px; padding-left: 20px; color: #cbd5e1; font-size: 0.92rem; }
+    .job ul li { margin-bottom: 6px; }
+
+    .edu-item { margin-bottom: 16px; }
+    .edu-item strong { color: #f8fafc; }
+    .edu-item span { color: #64748b; font-size: 0.85rem; margin-left: 10px; }
+    .edu-item p { color: #94a3b8; font-size: 0.9rem; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #475569;
+      font-size: 0.85rem;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="kamna.png" alt="Kamna Sharma" class="avatar" />
+  <h1>Kamna Sharma</h1>
+  <h2>Lead Java Engineer</h2>
+  <p>12+ years building scalable, high-performance backend systems</p>
+  <div class="contact-bar">
+    <a href="mailto:kamna@example.com">✉ kamna@example.com</a>
+    <a href="#">🔗 linkedin.com/in/kamna</a>
+    <a href="#">🐙 github.com/kamna9976</a>
+    <a href="#">📍 London, UK</a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h3>Summary</h3>
+    <p class="summary">
+      Seasoned Lead Java Engineer with 12+ years of experience designing and delivering
+      enterprise-grade microservices, distributed systems, and cloud-native applications.
+      Proven track record of leading cross-functional teams, driving architectural decisions,
+      and mentoring engineers. Deep expertise in Java ecosystem, Spring Boot, Kafka, and AWS.
+    </p>
+  </section>
+
+  <section>
+    <h3>Core Skills</h3>
+    <div class="skills-grid">
+      <span class="skill">Java 17 / 21</span>
+      <span class="skill">Spring Boot</span>
+      <span class="skill">Spring Cloud</span>
+      <span class="skill">Microservices</span>
+      <span class="skill">Apache Kafka</span>
+      <span class="skill">REST / GraphQL</span>
+      <span class="skill">Hibernate / JPA</span>
+      <span class="skill">PostgreSQL</span>
+      <span class="skill">Redis</span>
+      <span class="skill">Docker / Kubernetes</span>
+      <span class="skill">AWS (ECS, RDS, SQS)</span>
+      <span class="skill">CI/CD (Jenkins, GitHub Actions)</span>
+      <span class="skill">TDD / BDD</span>
+      <span class="skill">System Design</span>
+      <span class="skill">Team Leadership</span>
+    </div>
+  </section>
+
+  <section>
+    <h3>Experience</h3>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Lead Java Engineer</div>
+          <div class="job-company">London Stock Exchange · Nottingham, UK</div>
+        </div>
+        <div class="job-date">Nov 2019 – Present</div>
+      </div>
+      <ul>
+        <li>Led a team of 8 engineers to re-architect a monolithic payments platform into 14 microservices, reducing deployment time by 70%.</li>
+        <li>Designed event-driven architecture using Apache Kafka processing 2M+ events/day with sub-100ms latency.</li>
+        <li>Drove adoption of Java 17 features (records, sealed classes) and improved code quality metrics by 40%.</li>
+        <li>Collaborated with product and architecture teams to define technical roadmap and OKRs.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Senior Java Engineer</div>
+          <div class="job-company">RetailTech Corp · Manchester, UK</div>
+        </div>
+        <div class="job-date">Mar 2017 – Dec 2020</div>
+      </div>
+      <ul>
+        <li>Built and maintained high-traffic e-commerce backend serving 5M+ daily users using Spring Boot and AWS.</li>
+        <li>Implemented distributed caching with Redis, cutting average API response time from 450ms to 80ms.</li>
+        <li>Mentored 4 junior engineers and introduced code review standards and pair programming practices.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Java Developer</div>
+          <div class="job-company">Infosys · Bangalore, India</div>
+        </div>
+        <div class="job-date">Jun 2013 – Feb 2017</div>
+      </div>
+      <ul>
+        <li>Developed enterprise Java EE applications for banking clients using Spring MVC and Hibernate.</li>
+        <li>Delivered RESTful APIs integrated with third-party payment gateways and core banking systems.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>Education</h3>
+    <div class="edu-item">
+      <strong>B.Tech in Computer Science</strong>
+      <span>2009 – 2013</span>
+      <p>National Institute of Technology, Jaipur</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Certifications</h3>
+    <div class="skills-grid">
+      <span class="skill">AWS Certified Solutions Architect – Associate</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Kamna Sharma · Lead Java Engineer
+</footer>
+
+</body>
+</html>
